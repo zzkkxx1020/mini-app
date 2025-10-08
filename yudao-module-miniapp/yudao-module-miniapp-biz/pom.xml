@@ -31,13 +31,13 @@
         </dependency>
         <dependency>
             <groupId>cn.iocoder.boot</groupId>
-            <artifactId>yudao-spring-boot-starter-biz-tenant</artifactId>
+            <artifactId>yudao-module-member-api</artifactId>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>cn.iocoder.boot</groupId>
-            <artifactId>yudao-spring-boot-starter-biz-member</artifactId>
+            <artifactId>yudao-spring-boot-starter-biz-tenant</artifactId>
         </dependency>
-
 
         <!-- Web 相关 -->
         <dependency>
@@ -55,13 +55,6 @@
             <groupId>cn.iocoder.boot</groupId>
             <artifactId>yudao-spring-boot-starter-mybatis</artifactId>
         </dependency>
-        <dependency>
-            <groupId>cn.iocoder.boot</groupId>
-            <artifactId>yudao-module-member-api</artifactId>
-            <version>2.3.0-jdk8-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-
 
     </dependencies>
 
