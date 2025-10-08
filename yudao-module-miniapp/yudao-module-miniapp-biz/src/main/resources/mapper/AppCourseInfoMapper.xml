@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.iocoder.yudao.module.miniapp.mapper.AppCourseInfoMapper">
+
+    <resultMap id="BaseResultMap" type="cn.iocoder.yudao.module.miniapp.model.dao.course.AppCourseInfo">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="courseName" column="course_name" jdbcType="VARCHAR"/>
+            <result property="courseCategory" column="course_category" jdbcType="INTEGER"/>
+            <result property="courseNature" column="course_nature" jdbcType="INTEGER"/>
+            <result property="courseTag" column="course_tag" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="FLOAT"/>
+            <result property="createUserName" column="create_user_name" jdbcType="VARCHAR"/>
+            <result property="createUserId" column="create_user_id" jdbcType="BIGINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="isPublic" column="is_public" jdbcType="TINYINT"/>
+            <result property="delTag" column="del_tag" jdbcType="TINYINT"/>
+            <result property="sort" column="sort" jdbcType="BIGINT"/>
+            <result property="courseIntro" column="course_intro" jdbcType="VARCHAR"/>
+            <result property="appId" column="app_id" jdbcType="INTEGER"/>
+            <result property="homeFile" column="home_file" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,course_name,course_category,
+        course_nature,course_tag,price,
+        create_user_name,create_user_id,create_time,
+        is_public,del_tag,sort,
+        course_intro,app_id,home_file
+    </sql>
+</mapper>
